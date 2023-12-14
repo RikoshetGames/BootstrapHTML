@@ -292,14 +292,58 @@ class MyServer(BaseHTTPRequestHandler):
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
-                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="w-100 btn btn-lg btn btn-success">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Имя" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" placeholder="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Мы никогда не передадим вашу электронную почту кому-либо еще.</div>
+                            </div>
+                            <button type="button" class="btn btn-primary from-control">Отправить</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Как купить?</a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Как доставить?</button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Какая гарантия?</button>
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                            Введите имя и Эмейл для связи.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="card card-body">
+                            Доставка осуществляется по всей России.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample3">
+                            <div class="card card-body">
+                            Гарантия на нашу продукцию 3 месяца.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-
     </div>
 
 </main>
@@ -318,7 +362,7 @@ class MyServer(BaseHTTPRequestHandler):
     })()
 </script>
 </body>
-</html> 
+</html>
         """
 
     def __get_index(self):
